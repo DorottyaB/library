@@ -56,8 +56,13 @@ const closeAddBookForm = () => {
 
 const updateBooksContainer = () => {
   resetBooksContainer();
-  for (let book of library.books) {
-    createBookRow(book);
+  if (library.books.length === 0) {
+    startMsg.classList.remove('hidden');
+  } else {
+    startMsg.classList.add('hidden');
+    for (let book of library.books) {
+      createBookRow(book);
+    }
   }
 };
 
