@@ -166,8 +166,7 @@ input[type='number'] {
   width: 22px;
   height: 22px;
   text-align: center;
-  border-radius: 50%;
-  background-color: var(--color-orange);
+  background-color: transparent;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -175,17 +174,14 @@ input[type='number'] {
 }
 
 .cancel-btn p {
-  color: #fff;
+  color: #0f1424;
   font-size: 1.5rem;
-  font-weight: 600;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-right: 0;
+  font-weight: 500;
 }
 
-.cancel-btn:hover {
-  filter: brightness(110%);
+.cancel-btn:hover p {
+  color: var(--color-orange);
 }
 
 main {
